@@ -107,9 +107,9 @@ void CleanUp(Book *start) {
 	Book *holdMe = NULL;
 	while (freeMe != NULL) {
 		holdMe = freeMe->next;
-		printf("Free Name:%s Speed:%d\n",
+		printf("Free Author:%s Name:%s Publ:%s Year:%s Pages:%s\n",
 			freeMe->author,
-			freeMe->publ,
+			freeMe->name,
 			freeMe->publ,
 			freeMe->year,
 			freeMe->pages);
