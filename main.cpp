@@ -120,7 +120,7 @@ void CleanUp(Book *start) {
 
 void WriteListToFile(Book *start) {
 	FILE *pFile;
-	pFile = fopen("myList.bin", "w");
+	pFile = fopen("myList.bin", "wb");
 
 	if (pFile != NULL) {
 		Book *currentBook = start;
